@@ -1,0 +1,3 @@
+
+insert into tb_manager (ID,Name,Password,RealName,IssueDate, mark) values ('1', 'admin', 'admin', 'yujutg', '2020-01-22', '总管理员');
+insert into tb_manager (id, name, realname, password, mark, issuedate) values (2, 'yujutg', 'yjt', 'yujutg', '普通管理员', now());

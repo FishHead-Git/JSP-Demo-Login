@@ -1,0 +1,6 @@
+create table if not exists tb_newsType(ID int not null primary key,TypeName varchar(50) not null, DateTime datetime not null)Default charset=utf8;
+create table if not exists tb_Link (ID int not null primary key, Name varchar(50) not null, Address varchar(50) not null, IssueDate datetime not null)default charset=utf8;
+create table if not exists tb_news(ID int not null primary key, Title varchar(100) not null, content text not null, Type varchar(100) not null, Style varchar(50) not null,IssDate datetime not null)default charset=utf8;
+create table if not exists tb_manager(ID int not null primary key, Name varchar(50) not null,Password varchar(50) not null,RealName varchar(50) not null,IssueDate datetime not null,mark varchar(50) not null)default charset=utf8;
+create table if not exists tb_style(ID int not null primary key,stylename varchar(50) not null, STName varchar(50) not null, DateTime datetime not null)default charset=utf8;
+create table if not exists tb_Vote(ID int not null primary key,Name varchar(50) not null, Address varchar(50) not null, Country varchar(50) not null,Job varchar(50) not null,Remark varchar(200) not null,Number int not null)default charset=utf8;
